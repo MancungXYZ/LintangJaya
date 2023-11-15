@@ -20,8 +20,7 @@ import {
   styled,
 } from "@mui/material";
 import { useState } from "react";
-import { LinkOffTwoTone } from "@mui/icons-material";
-import { Link } from "react-router-dom/cjs/react-router-dom";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState({
@@ -47,7 +46,7 @@ export const Navbar = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Home", "Features", "Services", "Listed", "Contact"].map(
+        {["Home", "Why Us", "Gallery", "Contact Us"].map(
           (text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
@@ -153,13 +152,21 @@ export const Navbar = () => {
           gap: "1rem",
         }}
       >
-        <NavLink variant="body2">Lihat Rute</NavLink>
-        <CustomButton
-          backgroundColor="#0F1B4C"
-          color="#fff"
-          buttonText="TELEPON"
-          containerElement={<Link to="https://api.whatsapp.com/send/?phone=6282248931314&text&type=phone_number&app_absent=0" />} 
-        />
+        <a style={{
+          textDecoration: "none"
+        }} href="https://maps.app.goo.gl/r5hJFC8JvHXVsKWt7">
+           <NavLink variant="body2">Lihat Rute</NavLink> 
+        </a>
+        <a
+        style={{
+          textDecoration: "none"
+        }} href="https://api.whatsapp.com/send/?phone=6282248931314&text&type=phone_number&app_absent=0">
+          <CustomButton
+            backgroundColor="#0F1B4C"
+            color="#fff"
+            buttonText="TELEPON" 
+          />
+        </a>
       </Box>
     </NavbarContainer>
   );
