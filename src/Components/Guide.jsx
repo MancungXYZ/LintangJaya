@@ -1,9 +1,10 @@
 import { Box, Button, styled, Typography } from "@mui/material";
 import React from "react";
 
-import buyIcon from "../media/buy_icon.png";
-import sellIcon from "../media/sell_icon.png";
-import rentIcon from "../media/rent_icon.png";
+import price from "../media/price.png";
+import service from "../media/services.png";
+import bestprice from "../media/bestprice.png";
+import gudang from "../media/gudang.png";
 
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import CustomButton from "./CustomButton";
@@ -19,7 +20,7 @@ const Guide = () => {
   const GuidesBox = styled(Box)(({ theme }) => ({
     display: "flex",
     justifyContent: "space-around",
-    width: "70%",
+    width: "80%",
     marginTop: theme.spacing(5),
     marginBottom: theme.spacing(5),
     [theme.breakpoints.down("md")]: {
@@ -38,6 +39,20 @@ const Guide = () => {
     marginTop: theme.spacing(5),
     [theme.breakpoints.down("sm")]: {
       margin: theme.spacing(2, 0, 2, 0),
+      alignItems: "center",
+      textAlign: "center"
+    },
+  }));
+
+  const Title = styled(Typography)(({ theme }) => ({
+    fontSize: "35px",
+    color: "#000336",
+    fontWeight: "bold",
+    margin: theme.spacing(4, 0, 4, 0),
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "25px",
+      alignItems: "center",
+      textAlign: "center"
     },
   }));
 
@@ -59,41 +74,27 @@ const Guide = () => {
         }}
       ></div>
 
-      <Typography
-        variant="h3"
-        sx={{ fontSize: "35px", fontWeight: "bold", color: "#000339", my: 3 }}
-      >
-        How it works?
-      </Typography>
-
-      <CustomBox>
-        <Typography
-          variant="body2"
-          sx={{
-            fontSize: "16px",
-            fontWeight: "500",
-            color: "#5A6473",
-            textAlign: "center",
-          }}
-        >
-          Everything you need to know when you want to buy, rent or sell - All
-          in one place
-        </Typography>
-      </CustomBox>
+      <Title>
+        Kenapa Lintang Jaya Mandiri?
+      </Title>
 
       <GuidesBox>
+
         <GuideBox>
-          <img src={buyIcon} alt="buyIcon" />
+          <img src={gudang} alt="buyIcon" style = {{
+            width: '100px',
+            height: '100px'
+          }} />
           <Typography
             variant="body2"
             sx={{
               fontWeight: "500",
-              fontSize: "20px",
+              fontSize: "18px",
               color: "#3B3c45",
               my: 1,
             }}
           >
-            Buying Guides
+            Barang Lengkap
           </Typography>
           <Box
             sx={{
@@ -107,24 +108,26 @@ const Guide = () => {
               variant="body2"
               sx={{ fontWeight: "bold", fontSize: "14px", color: "#0689FF" }}
             >
-              How to buy
+              Berbagai produk dan merek bahan material, 100% original
             </Typography>
-            <ArrowRightAltIcon style={{ color: "#0689FF" }} />
           </Box>
         </GuideBox>
 
         <GuideBox>
-          <img src={rentIcon} alt="buyIcon" />
+          <img src={service} alt="buyIcon" style = {{
+            width: '100px',
+            height: '100px'
+          }} />
           <Typography
             variant="body2"
             sx={{
               fontWeight: "500",
-              fontSize: "20px",
+              fontSize: "18px",
               color: "#3B3c45",
               my: 1,
             }}
           >
-            Renting Guides
+            Pelayanan Terbaik
           </Typography>
           <Box
             sx={{
@@ -138,24 +141,26 @@ const Guide = () => {
               variant="body2"
               sx={{ fontWeight: "bold", fontSize: "14px", color: "#0689FF" }}
             >
-              How to rent
+              Melayani dengan tulus dan sepenuh hati
             </Typography>
-            <ArrowRightAltIcon style={{ color: "#0689FF" }} />
           </Box>
         </GuideBox>
 
         <GuideBox>
-          <img src={sellIcon} alt="buyIcon" />
+          <img src={bestprice} alt="buyIcon" style = {{
+            width: '100px',
+            height: '100px'
+          }}/>
           <Typography
             variant="body2"
             sx={{
               fontWeight: "500",
-              fontSize: "20px",
+              fontSize: "18px",
               color: "#3B3c45",
               my: 1,
             }}
           >
-            Selling Guides
+            Harga Bersaing
           </Typography>
           <Box
             sx={{
@@ -169,19 +174,44 @@ const Guide = () => {
               variant="body2"
               sx={{ fontWeight: "bold", fontSize: "14px", color: "#0689FF" }}
             >
-              How to sell
+              Mengikuti harga pasar terkini dan harga khusus untuk akun bisnis
             </Typography>
-            <ArrowRightAltIcon style={{ color: "#0689FF" }} />
+          </Box>
+        </GuideBox>
+
+        <GuideBox>
+          <img src={price} alt="buyIcon" style = {{
+            width: '100px',
+            height: '100px'
+          }}/>
+          <Typography
+            variant="body2"
+            sx={{
+              fontWeight: "500",
+              fontSize: "18px",
+              color: "#3B3c45",
+              my: 1,
+            }}
+          >
+            Beragam Opsi Pembayaran
+          </Typography>
+          <Box
+            sx={{
+              cursor: "pointer",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Typography
+              variant="body2"
+              sx={{ fontWeight: "bold", fontSize: "14px", color: "#0689FF" }}
+            >
+              Mengikuti kebutuhan dan mendukung beragam opsi pembayaran
+            </Typography>
           </Box>
         </GuideBox>
       </GuidesBox>
-
-      <CustomButton
-        backgroundColor="#0F1B4C"
-        color="#fff"
-        buttonText="See Full Guides"
-        guideBtn={true}
-      />
     </Box>
   );
 };

@@ -2,7 +2,7 @@ import { Box, Button, styled, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import React from "react";
 import Navbar from "./Navbar";
-
+import { Link } from "react-router-dom/cjs/react-router-dom";
 import heroImg from "../media/hero_illustration.png";
 import CustomButton from "./CustomButton";
 
@@ -35,43 +35,34 @@ const Hero = () => {
         <Navbar />
         <CustomBox>
           <Box sx={{ flex: "1" }}>
-            <Typography
-              variant="body2"
-              sx={{
-                fontSize: "18px",
-                color: "#687690",
-                fontWeight: "500",
-                mt: 10,
-                mb: 4,
-              }}
-            >
-              Welcome to Besnik Agency
-            </Typography>
             <Title variant="h1">
-              Discover a place where you'll love to live.
+              CV Lintang Jaya Mandiri
             </Title>
             <Typography
               variant="body2"
               sx={{ fontSize: "18px", color: "#5A6473", my: 4 }}
             >
-              Be the first to get the best real estate deals before they hit the
-              mass market! Hot foreclosure deals with one simple search!
+             CV Lintang Jaya Mandiri merupakan toko bahan bangunan yang menyediakan berbagai bahan material secara lengkap untuk kebutuhan proyek pengerjaan bangunan mulai dari rumah, ruko, hingga gedung perkantoran. Anda dapat beli bahan bangunan dengan lengkap dan terpercaya, serta memiliki mutu kualitas yang terjamin dari toko bangunan lengkap.
             </Typography>
+            
             <CustomButton
+              component={Link}
               backgroundColor="#0F1B4C"
               color="#fff"
-              buttonText="More About Us"
+              buttonText="Hubungi 082248931314"
               heroBtn={true}
+              to="https://api.whatsapp.com/send/?phone=6282248931314&text&type=phone_number&app_absent=0"
             />
           </Box>
-
-          <Box sx={{ flex: "1.25" }}>
-            <img
-              src={heroImg}
-              alt="heroImg"
-              style={{ maxWidth: "100%", marginBottom: "2rem" }}
-            />
-          </Box>
+        
+            <Box sx>
+              <img
+                src={heroImg}
+                alt="heroImg"
+                style={{ maxWidth: "100%", marginBottom: "2rem"}}
+              />
+            </Box>
+          
         </CustomBox>
       </Container>
     </Box>

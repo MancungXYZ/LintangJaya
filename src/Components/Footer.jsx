@@ -60,6 +60,26 @@ const Footer = () => {
             <br />
             <FooterLink>Blog</FooterLink>
           </Box>
+          <Box>
+            <Typography
+              sx={{
+                fontSize: "20px",
+                color: "#1C1C1D",
+                fontWeight: "700",
+                mb: 2,
+              }}
+            >
+              Products
+            </Typography>
+
+            <FooterLink>Listing</FooterLink>
+            <br />
+            <FooterLink>Properties</FooterLink>
+            <br />
+            <FooterLink>Agents</FooterLink>
+            <br />
+            <FooterLink>Blog</FooterLink>
+          </Box>
 
           <Box>
             <Typography

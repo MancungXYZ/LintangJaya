@@ -1,35 +1,50 @@
-import house1 from "./media/image1.png";
-import house2 from "./media/image2.png";
-import house3 from "./media/image3.png";
+import house1 from "./media/image1.jpg";
+import house2 from "./media/image2.jpg";
+import house3 from "./media/image3.jpg";
+import house4 from './media/image4.jpg';
+import house5 from './media/image5.jpg';
+import house6 from './media/image6.jpg';
+import house7 from './media/image7.jpg';
+import house8 from './media/image8.png';
+import house9 from './media/image9.jpg';
 
 export const properties = [
   {
     id: "1",
     img: house1,
-    price: "35000",
-    address: "8502 Preston Rd. Inglewood, Maine 98280",
-    bedrooms: 2,
-    bathrooms: 2,
-    space: 2000,
   },
 
   {
     id: "2",
     img: house2,
-    price: "38000",
-    address: "Wailuku, HI 96793",
-    bedrooms: 3,
-    bathrooms: 2,
-    space: 2300,
   },
 
   {
     id: "3",
     img: house3,
-    price: "47000",
-    address: "2917 23rd St",
-    bedrooms: 4,
-    bathrooms: 3,
-    space: 3000,
+  },
+  {
+    id: "4",
+    img: house4,
+  },
+  {
+    id: "5",
+    img: house5,
+  },
+  {
+    id: "6",
+    img: house6,
+  },
+  {
+    id: "7",
+    img: house7,
+  },
+  {
+    id: "8",
+    img: house8,
+  },
+  {
+    id: "9",
+    img: house9,
   },
 ];

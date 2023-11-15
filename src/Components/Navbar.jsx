@@ -7,7 +7,7 @@ import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import HomeIcon from "@mui/icons-material/Home";
 import ContactsIcon from "@mui/icons-material/Contacts";
-import logoImg from "../media/logo.png";
+import logoLintang from "../media/logi.png";
 import { Container } from "@mui/system";
 import CustomButton from "./CustomButton";
 import {
@@ -21,6 +21,7 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import { LinkOffTwoTone } from "@mui/icons-material";
+import { Link } from "react-router-dom/cjs/react-router-dom";
 
 export const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState({
@@ -77,6 +78,7 @@ export const Navbar = () => {
   }));
 
   const NavbarLinksBox = styled(Box)(({ theme }) => ({
+    marginTop: "15px",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -106,6 +108,7 @@ export const Navbar = () => {
   }));
 
   const NavbarLogo = styled("img")(({ theme }) => ({
+    width: "200px",
     cursor: "pointer",
     [theme.breakpoints.down("md")]: {
       display: "none",
@@ -131,15 +134,14 @@ export const Navbar = () => {
           >
             {list("left")}
           </Drawer>
-          <NavbarLogo src={logoImg} alt="logo" />
+          <NavbarLogo src={logoLintang} alt="logo" />
         </Box>
 
         <NavbarLinksBox>
           <NavLink variant="body2">Home</NavLink>
-          <NavLink variant="body2">Features</NavLink>
-          <NavLink variant="body2">Services</NavLink>
-          <NavLink variant="body2">Listed</NavLink>
-          <NavLink variant="body2">Contact</NavLink>
+          <NavLink variant="body2">Why Us</NavLink>
+          <NavLink variant="body2">Gallery</NavLink>
+          <NavLink variant="body2">Contact Us</NavLink>
         </NavbarLinksBox>
       </Box>
 
@@ -151,11 +153,12 @@ export const Navbar = () => {
           gap: "1rem",
         }}
       >
-        <NavLink variant="body2">Sign Up</NavLink>
+        <NavLink variant="body2">Lihat Rute</NavLink>
         <CustomButton
           backgroundColor="#0F1B4C"
           color="#fff"
-          buttonText="Register"
+          buttonText="TELEPON"
+          containerElement={<Link to="https://api.whatsapp.com/send/?phone=6282248931314&text&type=phone_number&app_absent=0" />} 
         />
       </Box>
     </NavbarContainer>

@@ -6,7 +6,8 @@ import { properties } from "../properties";
 const Properties = () => {
   const PropertiesBox = styled(Box)(({ theme }) => ({
     display: "flex",
-    justifyContent: "space-between",
+    flexWrap: 'wrap',
+    justifyContent: "space-around",
     marginTop: theme.spacing(5),
     [theme.breakpoints.down("md")]: {
       flexDirection: "column",
@@ -27,7 +28,7 @@ const Properties = () => {
           <Typography
             sx={{ color: "#000339", fontSize: "35px", fontWeight: "bold" }}
           >
-            Featured Properties
+            Gallery
           </Typography>
           <Typography sx={{ color: "#5A6473", fontSize: "16px", mt: 1 }}>
             Everything you need to know when looking for a new home!
@@ -39,11 +40,6 @@ const Properties = () => {
             <House
               key={property.id}
               img={property.img}
-              price={property.price}
-              address={property.address}
-              bedrooms={property.bedrooms}
-              bathrooms={property.bathrooms}
-              space={property.space}
             />
           ))}
         </PropertiesBox>
