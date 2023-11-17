@@ -1,10 +1,12 @@
 import { styled, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
+import Divider from '@mui/material/Divider';
 
 import fbIcon from "../media/fbicon.png";
 import twitterIcon from "../media/twittericon.png";
 import linkedinIcon from "../media/linkedinicon.png";
+import logo from '../media/logi.png'
 
 const Footer = () => {
   const CustomContainer = styled(Container)(({ theme }) => ({
@@ -26,6 +28,12 @@ const Footer = () => {
     },
   }));
 
+  const Title = styled(Typography)(({theme}) => ({
+    fontSize: "16px",
+    color: "#7A7A7E",
+    fontWeight: "300",
+  }));
+
   const FooterLink = styled("span")(({ theme }) => ({
     fontSize: "16px",
     color: "#7A7A7E",
@@ -37,29 +45,50 @@ const Footer = () => {
   }));
 
   return (
-    <Box sx={{ py: 10 }}>
+    <Box sx={{ paddingTop: 10 }}>
       <CustomContainer>
-        <CustomContainer>
-          <Box>
+        <Box>
+            <img src={logo} alt="Logo" style={{
+              width: "200px",
+              marginBottom: "15px"
+            }}>
+            
+            </img>
+
+            <Title>Whatsapp</Title>
             <Typography
               sx={{
-                fontSize: "20px",
+                fontSize: "18px",
                 color: "#1C1C1D",
-                fontWeight: "700",
-                mb: 2,
+                fontWeight: "700"
               }}
             >
-              Products
+              +62 822-4893-1314
             </Typography>
-
-            <FooterLink>Listing</FooterLink>
             <br />
-            <FooterLink>Properties</FooterLink>
+            <Title>Email</Title>
+            <Typography
+              sx={{
+                fontSize: "18px",
+                color: "#1C1C1D",
+                fontWeight: "700"
+              }}
+            >
+              Lintangjayamandiri@gmail.com
+            </Typography>
             <br />
-            <FooterLink>Agents</FooterLink>
-            <br />
-            <FooterLink>Blog</FooterLink>
+            <Title>Alamat</Title>
+            <Typography
+              sx={{
+                fontSize: "18px",
+                color: "#1C1C1D",
+                fontWeight: "700"
+              }}
+            >
+              Jl. Gadog Raya No.169, Cisalak Ps., Kec. Cimanggis, Kota Depok, Jawa Barat 16452
+            </Typography>
           </Box>
+        <CustomContainer>
           <Box>
             <Typography
               sx={{
@@ -123,45 +152,24 @@ const Footer = () => {
             <FooterLink>Sitemap</FooterLink>
           </Box>
 
-          <Box>
-            <Typography
-              sx={{
-                fontSize: "20px",
-                color: "#1C1C1D",
-                fontWeight: "700",
-                mb: 2,
-              }}
-            >
-              Get in touch
-            </Typography>
 
-            <Typography
-              sx={{
-                fontSize: "16px",
-                color: "#7A7A7E",
-                fontWeight: "500",
-                mb: 2,
-              }}
-            >
-              You’ll find your next home, in any style you prefer.
-            </Typography>
-
-            <IconBox>
-              <img src={fbIcon} alt="fbIcon" style={{ cursor: "pointer" }} />
-              <img
-                src={twitterIcon}
-                alt="twitterIcon"
-                style={{ cursor: "pointer" }}
-              />
-              <img
-                src={linkedinIcon}
-                alt="linkedinIcon"
-                style={{ cursor: "pointer" }}
-              />
-            </IconBox>
-          </Box>
         </CustomContainer>
       </CustomContainer>
+
+      <Box sx={{paddingTop: 5}}>
+        <Divider />
+        <Typography
+              sx={{
+                fontSize: "14px",
+                color: "#7A7A7E",
+                fontWeight: "700",
+                my: 2,
+                textAlign: "center"
+              }}
+            >
+              © 2023 Mancung Code. All Rights Reserved
+            </Typography>
+      </Box>
     </Box>
   );
 };

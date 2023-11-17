@@ -36,7 +36,9 @@ const Guide = () => {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    marginTop: theme.spacing(5),
+    marginTop: theme.spacing(3),
+    marginRight: theme.spacing(3),
+    textAlign: "center",
     [theme.breakpoints.down("sm")]: {
       margin: theme.spacing(2, 0, 2, 0),
       alignItems: "center",
@@ -106,7 +108,7 @@ const Guide = () => {
           >
             <Typography
               variant="body2"
-              sx={{ fontWeight: "bold", fontSize: "14px", color: "#0689FF" }}
+              sx={{ fontWeight: "bold", fontSize: "14px", color: "#0689FF"}}
             >
               Berbagai produk dan merek bahan material, 100% original
             </Typography>
