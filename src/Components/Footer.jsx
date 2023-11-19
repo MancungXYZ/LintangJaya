@@ -167,7 +167,7 @@ const Footer = () => {
                 textAlign: "center"
               }}
             >
-              © 2023 Mancung Code. All Rights Reserved
+              © 2023 Lintang Jaya Mandiri.
             </Typography>
       </Box>
     </Box>

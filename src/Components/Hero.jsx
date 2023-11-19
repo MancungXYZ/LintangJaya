@@ -44,15 +44,16 @@ const Hero = () => {
             >
              CV Lintang Jaya Mandiri merupakan toko bahan bangunan yang menyediakan berbagai bahan material secara lengkap untuk kebutuhan proyek pengerjaan bangunan mulai dari rumah, ruko, hingga gedung perkantoran. Anda dapat beli bahan bangunan dengan lengkap dan terpercaya, serta memiliki mutu kualitas yang terjamin dari toko bangunan lengkap.
             </Typography>
-            
-            <CustomButton
-              component={Link}
-              backgroundColor="#0F1B4C"
-              color="#fff"
-              buttonText="Hubungi 082248931314"
-              heroBtn={true}
-              to="https://api.whatsapp.com/send/?phone=6282248931314&text&type=phone_number&app_absent=0"
-            />
+            <a href="https://api.whatsapp.com/send/?phone=6282248931314&text&type=phone_number&app_absent=0" style={{
+              textDecoration: "none"
+            }}>
+              <CustomButton
+                backgroundColor="#0F1B4C"
+                color="#fff"
+                buttonText="Hubungi 082248931314"
+                heroBtn={true}
+              />
+            </a>
           </Box>
         
             <Box sx>

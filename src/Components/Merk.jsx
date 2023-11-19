@@ -9,6 +9,7 @@ import sanyo from '../media/sanyo6856.jpg'
 import nippon from '../media/nippon.png'
 import jotun from '../media/jotun.jpg'
 import pilip from '../media/pilip.png'
+import aqua from '../media/aquaproof.jpg'
 
 const Hero = () => {
   const Title = styled(Typography)(({ theme }) => ({
@@ -54,12 +55,6 @@ const Hero = () => {
         </Title>
         <GuidesBox>
             <GuideBox>
-            <img src={toto} alt="buyIcon" style = {{
-            width: '100px',
-            height: '100px'
-          }} />
-            </GuideBox>
-            <GuideBox>
             <img src={sig} alt="buyIcon" style = {{
             width: '100px',
             height: '100px'
@@ -67,6 +62,12 @@ const Hero = () => {
             </GuideBox>
             <GuideBox>
             <img src={rodatiga} alt="buyIcon" style = {{
+            width: '100px',
+            height: '100px'
+          }} />
+            </GuideBox>
+            <GuideBox>
+            <img src={toto} alt="buyIcon" style = {{
             width: '100px',
             height: '100px'
           }} />
@@ -90,7 +91,7 @@ const Hero = () => {
           }} />
             </GuideBox>
             <GuideBox>
-            <img src={pilip} alt="buyIcon" style = {{
+            <img src={aqua} alt="buyIcon" style = {{
             width: '100px',
             height: '100px'
           }} />
