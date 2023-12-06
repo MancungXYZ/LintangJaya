@@ -34,7 +34,7 @@ const Title = styled(Typography)(({ theme }) => ({
   });
   return (
     <Box sx={{ backgroundColor: "#F5FAFE", mt: 5, py: 10 }}>
-        <Container>
+        <Container className='Map'>
         <Title>
             Hubungi Kami
         </Title>

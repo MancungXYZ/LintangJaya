@@ -23,7 +23,7 @@ const Properties = () => {
 
   return (
     <Box sx={{ mt: 5, backgroundColor: "#F5FAFE", py: 10 }}>
-      <Container>
+      <Container className="Propertis">
         <PropertiesTextBox>
           <Typography
             sx={{ color: "#000339", fontSize: "35px", fontWeight: "bold" }}

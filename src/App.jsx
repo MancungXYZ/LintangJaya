@@ -20,8 +20,6 @@ function App() {
       <Properties />
       <Merk />
       <Maps />
-      {/* <Details />
-      <GetStarted /> */}
       <Footer />
     </>
   );

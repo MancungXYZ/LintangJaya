@@ -10,6 +10,7 @@ import ContactsIcon from "@mui/icons-material/Contacts";
 import logoLintang from "../media/logi.png";
 import { Container } from "@mui/system";
 import CustomButton from "./CustomButton";
+import { Link } from "react-scroll";
 import {
   Drawer,
   List,
@@ -20,7 +21,6 @@ import {
   styled,
 } from "@mui/material";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState({
@@ -137,10 +137,18 @@ export const Navbar = () => {
         </Box>
 
         <NavbarLinksBox>
-          <NavLink variant="body2">Home</NavLink>
-          <NavLink variant="body2">Why Us</NavLink>
-          <NavLink variant="body2">Gallery</NavLink>
-          <NavLink variant="body2">Contact Us</NavLink>
+          <NavLink variant="body2">
+            <Link to="Hero" offset={true} spy={true} duration={500} smooth={true} >Home</Link>
+          </NavLink>
+          <NavLink variant="body2">
+            <Link to="Guide" offset={true} spy={true} duration={500} smooth={true} >Why Us</Link>
+          </NavLink>
+          <NavLink variant="body2">
+            <Link to="Propertis" offset={true} spy={true} duration={500} smooth={true} >Gallery</Link>
+          </NavLink>
+          <NavLink variant="body2">
+            <Link to="Map" offset={true} spy={true} duration={500} smooth={true}>Contact Us</Link>
+          </NavLink>
         </NavbarLinksBox>
       </Box>
 

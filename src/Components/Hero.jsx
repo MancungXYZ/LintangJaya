@@ -31,7 +31,7 @@ const Hero = () => {
 
   return (
     <Box sx={{ backgroundColor: "#E6F0FF", minHeight: "80vh" }}>
-      <Container>
+      <Container className="Hero">
         <Navbar />
         <CustomBox>
           <Box sx={{ flex: "1" }}>
