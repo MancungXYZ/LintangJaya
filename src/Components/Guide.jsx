@@ -77,7 +77,7 @@ const Guide = () => {
       ></div>
 
       <Title>
-        Kenapa Lintang Jaya Mandiri?
+        Kenapa Jaya Lintang Mandiri?
       </Title>
 
       <GuidesBox>

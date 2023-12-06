@@ -36,13 +36,13 @@ const Hero = () => {
         <CustomBox>
           <Box sx={{ flex: "1" }}>
             <Title variant="h1">
-              CV Lintang Jaya Mandiri
+              CV Jaya Lintang Mandiri
             </Title>
             <Typography
               variant="body2"
               sx={{ fontSize: "18px", color: "#5A6473", my: 4 }}
             >
-             CV Lintang Jaya Mandiri merupakan toko bahan bangunan yang menyediakan berbagai bahan material secara lengkap untuk kebutuhan proyek pengerjaan bangunan mulai dari rumah, ruko, hingga gedung perkantoran. Anda dapat beli bahan bangunan dengan lengkap dan terpercaya, serta memiliki mutu kualitas yang terjamin dari toko bangunan lengkap.
+             CV Jaya Lintang Mandiri merupakan toko bahan bangunan yang menyediakan berbagai bahan material secara lengkap untuk kebutuhan proyek pengerjaan bangunan mulai dari rumah, ruko, hingga gedung perkantoran. Anda dapat beli bahan bangunan dengan lengkap dan terpercaya, serta memiliki mutu kualitas yang terjamin dari toko bangunan lengkap.
             </Typography>
             <a href="https://api.whatsapp.com/send/?phone=6282248931314&text&type=phone_number&app_absent=0" style={{
               textDecoration: "none"
