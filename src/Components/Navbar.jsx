@@ -162,7 +162,7 @@ export const Navbar = () => {
       >
         <a style={{
           textDecoration: "none"
-        }} href="https://maps.app.goo.gl/r5hJFC8JvHXVsKWt7">
+        }} href="https://maps.app.goo.gl/wHJD4C3tYDrY6XeM6?g_st=iw">
            <NavLink variant="body2">Lihat Rute</NavLink> 
         </a>
         <a

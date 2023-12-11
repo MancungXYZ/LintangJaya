@@ -48,7 +48,7 @@ const Hero = () => {
   }));
 
   return (
-    <Box sx={{ minHeight: "35vh" }}>
+    <Box data-aos="zoom-out" sx={{ minHeight: "35vh" }}>
       <Container>
         <Title>
             Merk Terdaftar

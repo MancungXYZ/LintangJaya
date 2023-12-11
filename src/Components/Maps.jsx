@@ -8,7 +8,7 @@ import iconRetina from 'leaflet/dist/images/marker-icon-2x.png'
 import iconShadow from 'leaflet/dist/images/marker-shadow.png'
 
 function Maps() {
-const position = [-6.374910, 106.868087]
+const position = [-6.930494825223211, 110.17103080000504]
 
 const MapTextBox = styled(Box)(({ theme }) => ({
     [theme.breakpoints.down("md")]: {

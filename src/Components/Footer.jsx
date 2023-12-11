@@ -85,7 +85,7 @@ const Footer = () => {
                 fontWeight: "700"
               }}
             >
-              Jl. Gadog Raya No.169, Cisalak Ps., Kec. Cimanggis, Kota Depok, Jawa Barat 16452
+              Jln Jambe Lor, Jambearum, Kec. Patebon, Kabupaten Kendal, Jawa Tengah 51351
             </Typography>
           </Box>
         <CustomContainer>

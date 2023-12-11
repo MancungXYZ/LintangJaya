@@ -22,7 +22,7 @@ const Properties = () => {
   }));
 
   return (
-    <Box sx={{ mt: 5, backgroundColor: "#F5FAFE", py: 10 }}>
+    <Box sx={{ mt: 5, backgroundColor: "#F5FAFE", py: 10 }} data-aos="zoom-in-up">
       <Container className="Propertis">
         <PropertiesTextBox>
           <Typography

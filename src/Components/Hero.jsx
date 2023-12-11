@@ -33,7 +33,7 @@ const Hero = () => {
     <Box sx={{ backgroundColor: "#E6F0FF", minHeight: "80vh" }}>
       <Container className="Hero">
         <Navbar />
-        <CustomBox>
+        <CustomBox data-aos="fade-up">
           <Box sx={{ flex: "1" }}>
             <Title variant="h1">
               CV Jaya Lintang Mandiri

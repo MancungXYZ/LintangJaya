@@ -59,7 +59,7 @@ const Guide = () => {
   }));
 
   return (
-    <Box className="Guide"
+    <Box data-aos="fade-right" className="Guide"
       sx={{
         display: "flex",
         flexDirection: "column",
