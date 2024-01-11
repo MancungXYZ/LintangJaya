@@ -2,11 +2,11 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
-import FeaturedPlayListIcon from "@mui/icons-material/FeaturedPlayList";
-import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices";
+import ContactPageIcon from '@mui/icons-material/ContactPage';
+import CollectionsIcon from '@mui/icons-material/Collections';
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import HomeIcon from "@mui/icons-material/Home";
-import ContactsIcon from "@mui/icons-material/Contacts";
+import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 import logoLintang from "../media/logi.png";
 import { Container } from "@mui/system";
 import CustomButton from "./CustomButton";
@@ -52,10 +52,10 @@ export const Navbar = () => {
               <ListItemButton>
                 <ListItemIcon>
                   {index === 0 && <HomeIcon />}
-                  {index === 1 && <FeaturedPlayListIcon />}
-                  {index === 2 && <MiscellaneousServicesIcon />}
+                  {index === 1 && <RocketLaunchIcon />}
+                  {index === 2 && <CollectionsIcon />}
                   {index === 3 && <ListAltIcon />}
-                  {index === 4 && <ContactsIcon />}
+                  {index === 4 && <ContactPageIcon />}
                 </ListItemIcon>
                 <ListItemText primary={text} />
               </ListItemButton>

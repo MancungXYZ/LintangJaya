@@ -7,16 +7,18 @@ import house6 from './media/image6.jpg';
 import house7 from './media/image7.jpg';
 import house8 from './media/image8.png';
 import house9 from './media/image9.jpg';
+import depan from './media/depan.jpeg'
+import depan2 from './media/depanok.jpeg'
 
 export const properties = [
   {
     id: "1",
-    img: house1,
+    img: depan,
   },
 
   {
     id: "2",
-    img: house2,
+    img: depan2,
   },
 
   {

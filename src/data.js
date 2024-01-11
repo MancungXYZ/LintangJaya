@@ -12,6 +12,7 @@ import sig from './media/sig.png'
 import cosmos from './media/logo-COSMOS-1150.png'
 import onda from './media/onda.png'
 import grobogan  from './media/groobgan.jpg'
+import toto from './media/toto.png'
 
 export const data = [
     {
@@ -95,6 +96,12 @@ export const data = [
     {
         id: "14",
         img: grobogan,
+        width: "100px",
+        height: "100px"
+    },
+    {
+        id: "15",
+        img: toto,
         width: "100px",
         height: "100px"
     },
