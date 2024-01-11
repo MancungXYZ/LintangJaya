@@ -1,6 +1,7 @@
 import { Box, Button, styled, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import React from "react";
+import {data} from '../data'
 
 import toto from '../media/toto.png'
 import sig from '../media/sig.png'
@@ -25,9 +26,12 @@ const Hero = () => {
 
   const GuidesBox = styled(Box)(({ theme }) => ({
     display: "flex",
+    flexWrap: "wrap",
     justifyContent: "space-around",
     width: "100%",
+    gap: theme.spacing(5),
     [theme.breakpoints.down("md")]: {
+      margin: theme.spacing(2, 0, 2, 0),
       width: "100%",
     },
     [theme.breakpoints.down("sm")]: {
@@ -54,48 +58,14 @@ const Hero = () => {
             Merk Terdaftar
         </Title>
         <GuidesBox>
+          {data.map((item) => (
             <GuideBox>
-            <img src={sig} alt="buyIcon" style = {{
-            width: '100px',
-            height: '100px'
-          }} />
+              <img src={item.img} alt="buyIcon" style = {{
+                width: '100px',
+                height: '100px'
+              }} />
             </GuideBox>
-            <GuideBox>
-            <img src={rodatiga} alt="buyIcon" style = {{
-            width: '100px',
-            height: '100px'
-          }} />
-            </GuideBox>
-            <GuideBox>
-            <img src={toto} alt="buyIcon" style = {{
-            width: '100px',
-            height: '100px'
-          }} />
-            </GuideBox>
-            <GuideBox>
-            <img src={sanyo} alt="buyIcon" style = {{
-            width: '100px',
-            height: '100px'
-          }} />
-            </GuideBox>
-            <GuideBox>
-            <img src={nippon} alt="buyIcon" style = {{
-            width: '150px',
-            height: '100px'
-          }} />
-            </GuideBox>
-            <GuideBox>
-            <img src={jotun} alt="buyIcon" style = {{
-            width: '100px',
-            height: '100px'
-          }} />
-            </GuideBox>
-            <GuideBox>
-            <img src={aqua} alt="buyIcon" style = {{
-            width: '100px',
-            height: '100px'
-          }} />
-            </GuideBox>
+          ))}
         </GuidesBox>
       </Container>
     </Box>

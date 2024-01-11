@@ -21,7 +21,6 @@ const House = ({ img }) => {
         <img src={img} alt="toko" style={{ 
           backgroundSize: "cover",
           maxWidth: "100%",
-          // maxHeight: '80%',
           width: "350px",
           height: "250px",
           borderRadius: '5px', 

@@ -2,10 +2,10 @@ import { styled, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
 import Divider from '@mui/material/Divider';
-
-import fbIcon from "../media/fbicon.png";
-import twitterIcon from "../media/twittericon.png";
-import linkedinIcon from "../media/linkedinicon.png";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import EmailIcon from '@mui/icons-material/Email';
+import IconButton from '@mui/material/IconButton';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import logo from '../media/logi.png'
 
 const Footer = () => {
@@ -76,7 +76,9 @@ const Footer = () => {
             >
               Lintangjayamandiri@gmail.com
             </Typography>
-            <br />
+          </Box>
+        <CustomContainer>
+          <Box>
             <Title>Alamat</Title>
             <Typography
               sx={{
@@ -87,89 +89,54 @@ const Footer = () => {
             >
               Jln Jambe Lor, Jambearum, Kec. Patebon, Kabupaten Kendal, Jawa Tengah 51351
             </Typography>
-          </Box>
-        <CustomContainer>
-          <Box>
+            <Title>Tentang Kami</Title>
             <Typography
               sx={{
-                fontSize: "20px",
+                fontSize: "18px",
                 color: "#1C1C1D",
-                fontWeight: "700",
-                mb: 2,
+                fontWeight: "700"
               }}
             >
-              Products
+              CV Jaya Lintang Mandiri merupakan toko bahan bangunan yang menyediakan berbagai bahan material secara lengkap untuk kebutuhan proyek pengerjaan bangunan mulai dari rumah, ruko, hingga gedung perkantoran. Anda dapat beli bahan bangunan dengan lengkap dan terpercaya, serta memiliki mutu kualitas yang terjamin dari toko bangunan lengkap.
             </Typography>
-
-            <FooterLink>Listing</FooterLink>
-            <br />
-            <FooterLink>Properties</FooterLink>
-            <br />
-            <FooterLink>Agents</FooterLink>
-            <br />
-            <FooterLink>Blog</FooterLink>
           </Box>
-
-          <Box>
-            <Typography
-              sx={{
-                fontSize: "20px",
-                color: "#1C1C1D",
-                fontWeight: "700",
-                mb: 2,
-              }}
-            >
-              Resources
-            </Typography>
-
-            <FooterLink>Our Homes</FooterLink>
-            <br />
-            <FooterLink>Stories</FooterLink>
-            <br />
-            <FooterLink>Video</FooterLink>
-            <br />
-            <FooterLink>Free Trial</FooterLink>
-          </Box>
-
-          <Box>
-            <Typography
-              sx={{
-                fontSize: "20px",
-                color: "#1C1C1D",
-                fontWeight: "700",
-                mb: 2,
-              }}
-            >
-              Company
-            </Typography>
-
-            <FooterLink>Partnerships</FooterLink>
-            <br />
-            <FooterLink>Terms of use</FooterLink>
-            <br />
-            <FooterLink>Privacy</FooterLink>
-            <br />
-            <FooterLink>Sitemap</FooterLink>
-          </Box>
-
-
         </CustomContainer>
       </CustomContainer>
 
       <Box sx={{paddingTop: 5}}>
         <Divider />
-        <Typography
-              sx={{
-                fontSize: "14px",
-                color: "#7A7A7E",
-                fontWeight: "700",
-                my: 2,
-                textAlign: "center"
-              }}
-            >
-              © 2023 Lintang Jaya Mandiri.
-            </Typography>
-      </Box>
+        <Box sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          px: "1.5rem"
+        }}>
+              <Box>
+                <Typography
+                  sx={{
+                    fontSize: "14px",
+                    color: "#7A7A7E",
+                    fontWeight: "700",
+                    my: 1,
+                  }}
+                >
+                  © 2023 Lintang Jaya Mandiri.
+                </Typography>
+              </Box>
+
+              <Box>
+                <IconButton aria-label="wa">
+                  <WhatsAppIcon />
+                </IconButton>
+                <IconButton aria-label="email">
+                  <EmailIcon />
+                </IconButton>
+                <IconButton aria-label="ig">
+                  <InstagramIcon />
+                </IconButton>
+              </Box>
+        </Box>
+
+        </Box>
     </Box>
   );
 };
