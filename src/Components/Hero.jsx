@@ -50,7 +50,7 @@ const Hero = () => {
               <CustomButton
                 backgroundColor="#0F1B4C"
                 color="#fff"
-                buttonText="Hubungi 082248931314"
+                buttonText="Hubungi 082283491322"
                 heroBtn={true}
               />
             </a>

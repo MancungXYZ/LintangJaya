@@ -63,7 +63,7 @@ const Footer = () => {
                 fontWeight: "700"
               }}
             >
-              +62 822-4893-1314
+              +62-822-8349-1322
             </Typography>
             <br />
             <Title>Email</Title>
@@ -74,7 +74,7 @@ const Footer = () => {
                 fontWeight: "700"
               }}
             >
-              Lintangjayamandiri@gmail.com
+              mlintangjaya@gmail.com
             </Typography>
           </Box>
         <CustomContainer>

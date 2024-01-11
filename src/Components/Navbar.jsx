@@ -168,7 +168,7 @@ export const Navbar = () => {
         <a
         style={{
           textDecoration: "none"
-        }} href="https://api.whatsapp.com/send/?phone=6282248931314&text&type=phone_number&app_absent=0">
+        }} href="https://api.whatsapp.com/send/?phone=6282283491322&text&type=phone_number&app_absent=0">
           <CustomButton
             backgroundColor="#0F1B4C"
             color="#fff"

@@ -85,11 +85,14 @@ const Title = styled(Typography)(({ theme }) => ({
               <Paragraph>Jadwal</Paragraph>
               <IsiText>Senin-Sabtu</IsiText>
 
+              <Paragraph>Jam Operasional</Paragraph>
+              <IsiText>08:00 - 16:00</IsiText>
+
               <Paragraph>Phone</Paragraph>
-              <IsiText>+62 822-4893-1314</IsiText>
+              <IsiText>+62-8228-3491-322</IsiText>
 
               <Paragraph>Email</Paragraph>
-              <IsiText>Lintangjayamandiri@gmail.com</IsiText>
+              <IsiText>mlintangjaya@gmail.com</IsiText>
 
               {/* <Box sx={{
                 display: "flex",
