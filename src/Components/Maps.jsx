@@ -30,8 +30,8 @@ const AddressWraper = styled(Box)(({theme}) => ({
   padding: theme.spacing(2),
   maxWidth: "450px",
   width: "400px",
-  [theme.breakpoints.down("md")]: {
-    width : "700px"
+  [theme.breakpoints.down("sm")]: {
+    width : "100%"
   }
   
 }))
@@ -53,8 +53,7 @@ const Title = styled(Typography)(({ theme }) => ({
     fontWeight: 700,
     marginTop: "10px",
     [theme.breakpoints.down("sm")]: {
-      fontSize: "40px",
-      textAlign: "center"
+      fontSize: "20px",
     },
   }));
   const IsiText = styled(Typography)(({ theme }) => ({
@@ -62,8 +61,8 @@ const Title = styled(Typography)(({ theme }) => ({
     color: "#00183E",
     fontWeight: "bold",
     [theme.breakpoints.down("sm")]: {
-      fontSize: "40px",
-      textAlign: "center"
+      fontSize: "25px",
+      textWrap: "wrap"
     },
   }));
   // L.Icon.Default.mergeOptions({
