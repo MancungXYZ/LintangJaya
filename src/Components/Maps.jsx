@@ -61,8 +61,8 @@ const Title = styled(Typography)(({ theme }) => ({
     color: "#00183E",
     fontWeight: "bold",
     [theme.breakpoints.down("sm")]: {
-      fontSize: "25px",
-      textWrap: "wrap"
+      fontSize: "23px",
+      overflow: "hidden"
     },
   }));
   // L.Icon.Default.mergeOptions({
