@@ -13,6 +13,13 @@ import cosmos from './media/logo-COSMOS-1150.png'
 import onda from './media/onda.png'
 import grobogan  from './media/groobgan.jpg'
 import toto from './media/toto.png'
+import platinum from './media/platinum.png'
+import asia from './media/asiaTile.png'
+import roman from './media/roman.png'
+import jupiter from './media/jupiter.png'
+import mowilex from './media/mowilex.jpg'
+import nippon from './media/nippon.png'
+import propan from './media/propan.png'
 
 export const data = [
     {
@@ -102,6 +109,48 @@ export const data = [
     {
         id: "15",
         img: toto,
+        width: "100px",
+        height: "100px"
+    },
+    {
+        id: "16",
+        img: platinum,
+        width: "100px",
+        height: "100px"
+    },
+    {
+        id: "17",
+        img: asia,
+        width: "100px",
+        height: "100px"
+    },
+    {
+        id: "18",
+        img: roman,
+        width: "100px",
+        height: "100px"
+    },
+    {
+        id: "19",
+        img: jupiter,
+        width: "100px",
+        height: "100px"
+    },
+    {
+        id: "20",
+        img: mowilex,
+        width: "100px",
+        height: "100px"
+    },
+    {
+        id: "21",
+        img: nippon,
+        width: "100px",
+        height: "100px"
+    },
+    {
+        id: "22",
+        img: propan,
         width: "100px",
         height: "100px"
     },

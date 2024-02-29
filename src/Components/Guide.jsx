@@ -6,8 +6,8 @@ import service from "../media/services.png";
 import bestprice from "../media/bestprice.png";
 import gudang from "../media/gudang.png";
 
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import CustomButton from "./CustomButton";
+// import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+// import CustomButton from "./CustomButton";
 
 const Guide = () => {
   const CustomBox = styled(Box)(({ theme }) => ({
