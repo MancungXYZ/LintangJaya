@@ -54,7 +54,6 @@ const Footer = () => {
             }}>
             
             </img>
-
             <Title>Whatsapp</Title>
             <Typography
               sx={{
@@ -63,7 +62,7 @@ const Footer = () => {
                 fontWeight: "700"
               }}
             >
-              +62-822-8349-1322
+              +62 823-3384-5639
             </Typography>
             <br />
             <Title>Email</Title>
@@ -119,18 +118,18 @@ const Footer = () => {
                     my: 1,
                   }}
                 >
-                  © 2023 Lintang Jaya Mandiri.
+                  © 2025 Lintang Jaya Mandiri.
                 </Typography>
               </Box>
 
               <Box>
-                <IconButton aria-label="wa">
+                <IconButton aria-label="wa" href="https://api.whatsapp.com/send/?phone=6282333845639&text&type=phone_number&app_absent=0">
                   <WhatsAppIcon />
                 </IconButton>
-                <IconButton aria-label="email">
+                <IconButton aria-label="email" href="mailto:mlintangjaya@gmail.com">
                   <EmailIcon />
                 </IconButton>
-                <IconButton aria-label="ig">
+                <IconButton aria-label="ig" href="https://www.instagram.com/jayalintangmandiri/">
                   <InstagramIcon />
                 </IconButton>
               </Box>

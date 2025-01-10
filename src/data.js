@@ -20,6 +20,16 @@ import jupiter from './media/jupiter.png'
 import mowilex from './media/mowilex.jpg'
 import nippon from './media/nippon.png'
 import propan from './media/propan.png'
+import deli from './media/deli.png'
+import broco from './media/broco.png'
+import merdeka from './media/merdeka.png'
+import granito from './media/granito.png'
+import wilmer from './media/wilmer.png'
+import artco from './media/artco.png'
+import inlite from './media/inlite.png'
+import penguin from './media/penguin.png'
+import mutama from './media/mutama.jpg'
+import maspion from './media/maspion.jpg'
 
 export const data = [
     {
@@ -151,6 +161,66 @@ export const data = [
     {
         id: "22",
         img: propan,
+        width: "100px",
+        height: "100px"
+    },
+    {
+        id: "23",
+        img: deli,
+        width: "100px",
+        height: "100px"
+    },
+    {
+        id: "24",
+        img: maspion,
+        width: "100px",
+        height: "100px"
+    },
+    {
+        id: "25",
+        img: broco,
+        width: "100px",
+        height: "100px"
+    },
+    {
+        id: "26",
+        img: merdeka,
+        width: "100px",
+        height: "100px"
+    },
+    {
+        id: "27",
+        img: granito,
+        width: "100px",
+        height: "100px"
+    },
+    {
+        id: "28",
+        img: wilmer,
+        width: "200px",
+        height: "100px"
+    },
+    {
+        id: "29",
+        img: inlite,
+        width: "100px",
+        height: "100px"
+    },
+    {
+        id: "30",
+        img: mutama,
+        width: "100px",
+        height: "100px"
+    },
+    {
+        id: "31",
+        img: artco,
+        width: "100px",
+        height: "100px"
+    },
+    {
+        id: "32",
+        img: penguin,
         width: "100px",
         height: "100px"
     },
